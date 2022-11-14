@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar"
 import Editor from "./components/Editor"
 import Header from "./components/Header"
 import { data } from "./data"
-import Split from "react-split"
+import {Split} from "react-split"
 import {nanoid} from "nanoid"
 
 
