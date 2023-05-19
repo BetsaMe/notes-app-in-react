@@ -1,18 +1,15 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Karla', sans-serif;
   background-color: #E9C0E9;
 }
-
 button:focus {
   outline: none;
 }
-
 .ql-editor p,
 .ql-editor.ql-blank::before {
   font-size: 1.3em;
@@ -21,10 +18,10 @@ button:focus {
 .header{
   width: 60%;
   height: 80px;
-  border-radius: 80px;
-  padding: 8px 50px;
-  margin: 50px auto;
-  background-color: #fff;
+  border-radius: 16px 16px 2px 2px;
+  padding: 8px 20px;
+  margin: 50px auto 10px;
+  background-color: #fcfcfc;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,59 +31,42 @@ button:focus {
 }
 main{
   width: 60%;
-  height: 70vh;
-  margin: 50px auto;
-  background-color: #fff;
-  border-radius: 30px;
+  margin: auto;
+  background-color: #fcfcfc;
+  border-radius:2px 2px 16px 16px;
 }
-
 .pane {
   overflow-y: auto;
-  height: calc(70vh - 2px);
-  border-radius: 0 30px 0 0;
+  max-height: 63vh;
 }
-
 .sidebar--header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding: 0 20px;
 }
-
 .sidebar--header > h3 {
   font-size: 1.6rem;
 }
-
-.new-note {
+.add-button {
   cursor: pointer;
   background-color: #1F2330;
   border: none;
   color: white;
   border-radius: 3px;
   height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  font-size: 1.5rem;
+  width: 150px;
+  border-radius: 50px;
+  font-size: 1rem;
+  margin: 20px;
+  float: right;
 }
-
-.first-note {
-  cursor: pointer;
+.add-button:hover{
   background-color: #502274;
-  border: none;
-  color: white;
-  border-radius: 30px;
-  padding: 1.1rem;
-  font-size: 18px;
 }
-
 .editor {
-  font-size: 1.5rem;
-  /* height: 60vh; */
+  font-size: 1.1rem;
 }
-
 .mde-text{
   height: 150px;
 }
-
 .title {
   overflow: hidden;
   width: 100%;
@@ -95,24 +75,10 @@ main{
   justify-content: space-between;
   align-items: center;
 }
-
-.title--delete {
-  display: none;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-}
-
-.title:hover .title--delete {
-  display: block;
-}
-
 .note-summary:not(:last-of-type) {
   border-bottom: 1px solid lightgray;
 }
-
 .text-snippet {
-  /* padding-inline: 5px; */
   padding: 0 20px;
   font-size: 1.1rem;
   font-weight: 400;
@@ -122,7 +88,6 @@ main{
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .selected-note {
   background-color: #502274;
 }
@@ -132,7 +97,6 @@ main{
 .note:hover .gg-trash{
   color: #502274;
 }
-
 .selected-note .text-snippet {
   color: white;
   font-weight: 700;
@@ -145,19 +109,15 @@ main{
   background-repeat: no-repeat;
   background-position: 50%;
 }
-
 .gutter.gutter-horizontal {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
 }
-
 .gutter.gutter-horizontal:hover {
   cursor: col-resize;
 }
-
 .split {
   display: flex;
 }
-
 .no-notes {
   width: 100%;
   height: 65vh;
@@ -166,7 +126,6 @@ main{
   justify-content: center;
   align-items: center;
 }
-
 .mde-header .svg-icon {
   height: 1.4em;
   width: 1.4em;
@@ -181,24 +140,18 @@ main{
 .mde-preview-content #typeyourmarkdownnotestitlehere{
   font-size: 1em;
 }
-
-
-
 .delete-btn {
   display: none;
   background: none;
   border: none;
 }
-
 .title:hover > .delete-btn {
   display: block;
 }
-
 .trash-icon {
   cursor: pointer;
   margin-right: 10px;
 }
-
 .gg-trash {
   box-sizing: border-box;
   position: relative;
@@ -216,7 +169,6 @@ main{
   margin-top: 4px;
   color:#fff;
 }
-
 .gg-trash::after,
 .gg-trash::before {
   content: "";
@@ -224,7 +176,6 @@ main{
   box-sizing: border-box;
   position: absolute
 }
-
 .gg-trash::after {
   background: currentColor;
   border-radius: 3px;
@@ -233,7 +184,6 @@ main{
   top: -4px;
   left: -5px
 }
-
 .gg-trash::before {
   width: 10px;
   height: 4px;
