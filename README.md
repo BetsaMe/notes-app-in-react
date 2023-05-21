@@ -3,7 +3,9 @@
 Project completed during the scrimba "learn to react" course.
 https://scrimba.com/learn/learnreact
 Instructor: Bob Ziroll
-![notes](https://github.com/BetsaMe/notes-app-in-react/assets/72797333/c31b2387-a8f5-4bcd-8fc0-42c8d1c17747)
+
+![notes2](https://github.com/BetsaMe/notes-app-in-react/assets/72797333/2a102f0b-0d7d-45ae-bb4a-5824d7a55fb7)
+
 
 ### Installing
 
